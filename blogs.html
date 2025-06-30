@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-body font-body scroll-smooth">
@@ -44,6 +45,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
+              <svg class="dark:hidden md:w-4 md:m-1 max-sm:scale-90 max-sm:translate-y-[15%] max-sm:translate-x-[15%]" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path class="fill-slate-400" d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z"></path><path class="fill-slate-500" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"></path></svg>
             </ul>
             <form class="d-flex" role="search">
               <div class="input-group">
@@ -53,6 +55,10 @@
             </form>
           </div>
         </div>
+        <button class="btn btn-secondary toggle-dark-btn" onclick="toggleDarkMode()">
+    🌙 Toggle Dark Mode
+  </button>
+
       </nav>
     </header>
     <!-- end navbar -->
@@ -348,5 +354,10 @@
     <!-- end footer -->        
     </div>
         <script src="js/bootstrap.js"></script>
+        <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
