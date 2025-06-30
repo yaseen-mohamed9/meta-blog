@@ -42,10 +42,24 @@
     --color-15: var(--color-07);
 }
 
-body {
-    background-color: var(--body-bg);
-    color: var(--text-color-01);
-}
+body.dark-mode {
+      background-color: #121212 !important;
+      color: #f1f1f1 !important;
+    }
+
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+      border-color: #333;
+    }
+
+    .toggle-dark-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
+    }
+
 
 .font-body {
     font-family: 'Poppins', sans-serif;
